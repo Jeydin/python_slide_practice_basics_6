@@ -1,7 +1,6 @@
 # Slide 1
 
-# Lists allow you to use one identifier (variable name)
-# to group items together
+# Lists allow you to use one identifier (variable name) to group items together
 
 students = ["Jason", "Jeydin", "Rohan"]
 
@@ -88,3 +87,31 @@ len_comp2 = len(new_company_coworkers)
 
 print("Yo Momma's company employees: " + str(len_comp1))
 print("Matt's company employees: " + str(len_comp2))
+
+# Day 2 of Slide Practice
+# One more method
+
+numList = [33, 43, 32, 23, 17, 29, 55, 17, 20]
+# .sort()
+numList.sort()
+print(numList)
+
+# Processing with loops
+
+total = 0
+for num in numList:
+	total += num
+print(total)
+
+for num in range(50, 60):
+	numList.append(num)
+print(num)
+
+# Cousin to lists
+# Tuples are almost just like lists
+# Tuples CANNOT be changed
+# Tuples use parentheses
+
+myFirstTuple = (243, 455, 260)
+print(myFirstTuple[1]) # 455
+# myFirstTuple.append(200) - Gives an error
